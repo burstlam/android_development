@@ -91,10 +91,10 @@ float sqrtf_approx(float r) {
     // symmetric about the real answer.
     const int32_t modifier = 0x1FBB4000;
 
-    int32_t r_i = *(int32_t*)(&r);
+    int32_t r_i; memcpy(&r_i, &r, sizeof(float));// = *(int32_t*)(&r);
     r_i = (r_i >> 1) + modifier;
 
-    return *(float*)(&r_i);
+     memcpy(&r, &r_i, sizeof(float)); return r; //return *(float*)(&r_i);
 }
 
 
