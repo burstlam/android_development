@@ -6838,6 +6838,7 @@
 		<field name="screenWidthDp" since="13" />
 		<field name="smallestScreenWidthDp" since="13" />
 		<field name="touchscreen" />
+		<field name="uiInvertedMode" since="13" />
 		<field name="uiMode" since="8" />
 	</class>
 	<class name="android/content/res/ObbInfo" since="9">

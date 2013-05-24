@@ -49,6 +49,7 @@ public class ConfigurationViewer extends Activity {
                 + "orientation=" + c.orientation + "\n"
                 + "screenLayout=0x" + Integer.toHexString(c.screenLayout) + "\n"
                 + "touchscreen=" + c.touchscreen + "\n"
+                + "uiInvertedMode=" + Integer.toHexString(c.uiInvertedMode) + "\n"
                 + "uiMode=0x" + Integer.toHexString(c.uiMode) + "\n"
                 + "\n"
                 + "DisplayMetrics\n"
